@@ -1,0 +1,42 @@
+# --- Raw and derived data: never commit (see CLAUDE.md repo conventions) ---
+data/
+results/
+*.vcf
+*.vcf.gz
+*.vcf.bgz
+*.tbi
+*.csi
+*.fa
+*.fa.fai
+*.fasta
+*.parquet
+# Exception: committed synthetic fixtures are explicitly allowed back in
+!tests/fixtures/
+!tests/fixtures/**
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- uv / virtualenv ---
+.venv/
+venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Project scratch (local planning notes, not part of the deliverable) ---
+scratch/
